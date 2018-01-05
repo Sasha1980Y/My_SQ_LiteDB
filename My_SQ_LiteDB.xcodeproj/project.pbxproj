@@ -12,9 +12,12 @@
 		7F18479F1FFF7D51002CEF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F18479D1FFF7D51002CEF75 /* Main.storyboard */; };
 		7F1847A11FFF7D51002CEF75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1847A01FFF7D51002CEF75 /* Assets.xcassets */; };
 		7F1847A41FFF7D51002CEF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1847A21FFF7D51002CEF75 /* LaunchScreen.storyboard */; };
+		DF8A5001D5D50F6ACDA03D89 /* Pods_My_SQ_LiteDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 976FE0ED845320DEAD541EDE /* Pods_My_SQ_LiteDB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393136ABC8B4ACAF131ABD56 /* Pods-My_SQ_LiteDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_SQ_LiteDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-My_SQ_LiteDB/Pods-My_SQ_LiteDB.release.xcconfig"; sourceTree = "<group>"; };
+		60BC9878D3DB724E1980D052 /* Pods-My_SQ_LiteDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My_SQ_LiteDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My_SQ_LiteDB/Pods-My_SQ_LiteDB.debug.xcconfig"; sourceTree = "<group>"; };
 		7F1847961FFF7D51002CEF75 /* My_SQ_LiteDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = My_SQ_LiteDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F1847991FFF7D51002CEF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F18479B1FFF7D51002CEF75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		7F1847A01FFF7D51002CEF75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1847A31FFF7D51002CEF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F1847A51FFF7D51002CEF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976FE0ED845320DEAD541EDE /* Pods_My_SQ_LiteDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_SQ_LiteDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF8A5001D5D50F6ACDA03D89 /* Pods_My_SQ_LiteDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C14E7083405FCAE228C1292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				976FE0ED845320DEAD541EDE /* Pods_My_SQ_LiteDB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7F18478D1FFF7D51002CEF75 = {
 			isa = PBXGroup;
 			children = (
 				7F1847981FFF7D51002CEF75 /* My_SQ_LiteDB */,
 				7F1847971FFF7D51002CEF75 /* Products */,
+				E38331B6D5D5F07931F93772 /* Pods */,
+				0C14E7083405FCAE228C1292 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = My_SQ_LiteDB;
 			sourceTree = "<group>";
 		};
+		E38331B6D5D5F07931F93772 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60BC9878D3DB724E1980D052 /* Pods-My_SQ_LiteDB.debug.xcconfig */,
+				393136ABC8B4ACAF131ABD56 /* Pods-My_SQ_LiteDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F1847A81FFF7D51002CEF75 /* Build configuration list for PBXNativeTarget "My_SQ_LiteDB" */;
 			buildPhases = (
+				F1A3A46BF399DFE2D6163D79 /* [CP] Check Pods Manifest.lock */,
 				7F1847921FFF7D51002CEF75 /* Sources */,
 				7F1847931FFF7D51002CEF75 /* Frameworks */,
 				7F1847941FFF7D51002CEF75 /* Resources */,
+				4A5A5C008D8276E2D2663A90 /* [CP] Embed Pods Frameworks */,
+				E7D167F9FBFF05CE41668D31 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A5A5C008D8276E2D2663A90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-My_SQ_LiteDB/Pods-My_SQ_LiteDB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My_SQ_LiteDB/Pods-My_SQ_LiteDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D167F9FBFF05CE41668D31 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-My_SQ_LiteDB/Pods-My_SQ_LiteDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1A3A46BF399DFE2D6163D79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My_SQ_LiteDB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F1847921FFF7D51002CEF75 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		7F1847A91FFF7D51002CEF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60BC9878D3DB724E1980D052 /* Pods-My_SQ_LiteDB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +368,7 @@
 		};
 		7F1847AA1FFF7D51002CEF75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 393136ABC8B4ACAF131ABD56 /* Pods-My_SQ_LiteDB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
